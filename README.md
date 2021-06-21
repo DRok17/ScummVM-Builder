@@ -41,6 +41,7 @@ icon0 = Square
 Shoutouts:
 
 Scummvm Team: https://github.com/scummvm/scummvm
+
 cy33hc: For creating the Scummvm Bubble Booter - https://github.com/cy33hc/scummvm-bubble-booter
 
 
