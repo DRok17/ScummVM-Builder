@@ -38,10 +38,10 @@ start PNGConvertOUT.bat
 GOTO MENU
 
 :PACKVPK
-cd .
-start ScummVM-Builder-VPK.bat
+cd ..
+start z-5ScummVM-Builder-VPK.bat
+cd "./.batch"
 GOTO MENU
-
 
 :WIPE
 cd .

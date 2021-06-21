@@ -10,4 +10,5 @@ del "..\input\*.bmp*"
 del "..\input\*.jpg*"
 del "..\input\*.jpeg*"
 del "..\input\*.jfif*"
+del "..\contents\*.txt*"
 exit
