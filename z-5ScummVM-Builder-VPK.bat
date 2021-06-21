@@ -2,7 +2,7 @@
 @ECHO OFF
 mode 50,12
 set /p defa=< .\.batch\def-vita-path.txt
-ECHO                  SCUMMVM BUILDER
+ECHO                  SCUMMVM-BUILDER
 ECHO.
 ECHO ..................................................
 ECHO.
