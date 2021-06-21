@@ -1,0 +1,67 @@
+:MENU
+@ECHO OFF
+mode 50,12
+set /p defa=< .\def-vita-path.txt
+ECHO                  SCUMMVM BUILDER
+ECHO.
+ECHO ..................................................
+ECHO.
+@echo off
+IF EXIST ..\contents\bub-name.txt (
+    @echo off
+    set "BOM=EF BB BF"
+    type "..\contents\bub-name.txt" | clip
+    GOTO BUBNAME
+  ) ELSE (
+    GOTO BUBNAME
+  )
+:BUBNAME
+@set /p title="Bubble Name: "
+@echo off
+IF EXIST ..\contents\bub-id.txt (
+    @echo off
+    set "BOM=EF BB BF"
+    type "..\contents\bub-id.txt" | clip
+    GOTO BUBID
+  ) ELSE (
+    GOTO BUBID
+  )
+:BUBID
+@set /p id="Title ID (9 char MAX [CAPS or #]): "
+@echo off
+IF EXIST ..\contents\game_id.txt (
+    @echo off
+    set "BOM=EF BB BF"
+    type "..\contents\game_id.txt" | clip
+    GOTO GAMEID
+  ) ELSE (
+    GOTO GAMEID
+  )
+:GAMEID
+@set /p gid="Game ID (Refer to INI): "
+@echo off
+IF EXIST .\folder.txt (
+    @echo off
+    set "BOM=EF BB BF"
+    type ".\folder.txt" | clip
+    GOTO BUBPATH
+  ) ELSE (
+    GOTO BUBPATH
+  )
+:BUBPATH
+@set /p path="Folder Name(ux0:data/scummvm/FOLDER): "
+@echo off
+cd ".."
+@echo|set /p="%path%"> ".batch/folder.txt"
+@echo|set /p="%defa%/%path%"> "contents/path.txt"
+@echo|set /p="%gid%"> "contents/game_id.txt"
+@echo|set /p="%title%"> "contents/bub-name.txt"
+@echo|set /p="%id%"> "contents/bub-id.txt"
+
+vita-mksfoex -s TITLE_ID=%id% "%title%" param.sfo
+vita-pack-vpk -s param.sfo -b eboot.bin "%id%.vpk" -a contents/icon0.png=sce_sys/icon0.png -a contents/bg.png=sce_sys/livearea/contents/bg.png -a contents/startup.png=sce_sys/livearea/contents/startup.png -a contents/template.xml=sce_sys/livearea/contents/template.xml -a contents/path.txt=path.txt -a contents/game_id.txt=game_id.txt
+GOTO CLNUP
+
+:CLNUP
+move ".\*.vpk*" ".\VPK"
+exit
