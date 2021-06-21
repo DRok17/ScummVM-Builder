@@ -17,15 +17,15 @@ Simply follow these steps:
 4) Run zz-ScummVM-Builder.bat 
 5) Select Image Converter and wait until finished
 6) Select Create VPK
-7) VPK will then generate in VPK folder
-8) Transfer and install to the Vita.
+7) Name, Title ID, Game ID (Please review ux0:data/scummvm/scummvm.ini file) and enter Path to desired game
+8) VPK will then generate in VPK folder
+9) Transfer and install to the Vita.
 
 ![image](https://user-images.githubusercontent.com/81541725/122704095-f4a25d80-d220-11eb-83d5-1c38e5d379a8.png)
 
 ![image](https://user-images.githubusercontent.com/81541725/122704333-80b48500-d221-11eb-931e-9f2075a734f5.png)
 
 ![image](https://user-images.githubusercontent.com/81541725/122704284-5c58a880-d221-11eb-81ca-f770a68d6775.png)
-
 
 
 For the best results, please use the Photos App (standard Windows app) to crop images BEFORE conversion.
