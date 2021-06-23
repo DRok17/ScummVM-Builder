@@ -1,6 +1,6 @@
-# Scummvm-Builder
+# ScummVM-Builder
 
-Big thanks to cy33hc and Scummvm Team for making this possible.
+Big thanks to cy33hc and ScummVM Team for making this possible.
 
 ***ONLY WORKS WITH SCUMMVM 2.3 AND HIGHER***
 
@@ -8,7 +8,7 @@ Link for instructions on compiling Scummvm official source code: https://wiki.sc
 
 Link to unofficial Scummvm fork by cy33hc: https://github.com/cy33hc/scummvm-bubble-booter/releases/download/v1.0/scummvm.vpk
 
-Scummvm-Builder is a tool that creates LiveArea Bubbles on Windows 10 for the PS Vita.
+Scummvm-Builder is a Windows 10 tool that creates custom LiveArea Bubbles for games running on ScummVM for the PS Vita.
 
 Simply follow these steps:
 1) Download the required images (Supported formats: jpg, jpeg, bmp, png, jfif, tiff)
@@ -40,7 +40,7 @@ icon0 = Square
 
 Shoutouts:
 
-Scummvm Team: https://github.com/scummvm/scummvm
+ScummVM Team: https://github.com/scummvm/scummvm
 
 cy33hc: For creating the Scummvm Bubble Booter - https://github.com/cy33hc/scummvm-bubble-booter
 
